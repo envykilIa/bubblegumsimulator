@@ -70,6 +70,29 @@ MainSection:NewToggle("Auto Sell [ Candy World ]", "Auto Sells Bubbles, Must Be 
     end
 end)
 
+MainSection:NewButton("Boost FPS", "Destroy's Some Useless Stuff In Workspace", function()
+		game:GetService("Workspace").Platforms:Destroy()
+		game:GetService("Workspace").PickupSpawns:Destroy()
+		game:GetService("Workspace").Cutscenes:Destroy()
+		game:GetService("Workspace").Pickups:Destroy()
+		game:GetService("Workspace").Bubbles:Destroy()
+		game:GetService("Workspace").Pets:Destroy()
+		game:GetService("Workspace").Model:Destroy()
+		game:GetService("Workspace").BubbleBoard:Destroy()
+		game:GetService("Workspace").Sign:Destroy()
+		game:GetService("Workspace").HatchBoard:Destroy()
+		game:GetService("Workspace").VIPSign:Destroy()
+		game:GetService("Workspace").GuessThatPet:Destroy()
+		game:GetService("Workspace").Sign:Destroy()
+		game:GetService("Workspace").Fireworks:Destroy()
+		game:GetService("Workspace").EggSigns:Destroy()
+		game:GetService("Workspace").TwitchSign:Destroy()
+		game:GetService("Workspace").CreditsBoard:Destroy()
+		game:GetService("Workspace").RankBoard:Destroy()
+		game:GetService("Workspace").Sign:Destroy()
+		game:GetService("Workspace").GumMachine:Destroy()
+end)
+
 
 -- + Hatch Egg Thing, I will Add More Eggs For Different Worlds, In The Mean-Time This Option Is Use-less.
 MainSection:NewDropdown("Hatch Egg", "Hatches Selected Egg, Must Be Near It.", {"Common Egg", "Spotted Egg", "Ice Shard Egg", "Spikey Egg", "Candycane Egg", "Frosted Egg", "Jelly Egg", "Slushy Egg", "Gummy Egg", "Ice Cream Egg", "Dominus Egg"}, function(eggType)
