@@ -1,5 +1,6 @@
 --[[
 BUBBLE GUM SIMULATOR GUI
+UPDATED 12/12/22
 Made by : fortunatesouls#8803
 --]]
 game:GetService('StarterGui'):SetCore("SendNotification", {
