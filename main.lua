@@ -2,6 +2,16 @@
 BUBBLE GUM SIMULATOR GUI
 Made by : fortunatesouls#8803
 --]]
+game:GetService('StarterGui'):SetCore("SendNotification", {
+	Title = 'BGS GUI';
+	Text = 'Welcome, Thanks For Using My GUI!';
+	Icon = "rbxassetid://6466161376";
+	Duration = 3.4028235e+38;
+	Button1 = 'Ok';
+});
+
+wait(0.69)
+
 local executed = "Working"
 local eggType = "eggType"
 
