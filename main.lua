@@ -106,6 +106,13 @@ MainSection:NewButton("Boost FPS", "Destroy's Some Useless Stuff In Workspace", 
 		game:GetService("Workspace").Model.MeshPart:Destroy()
 end)
 
+MainSection:NewButton("Spin To Win", "Spins Prize Wheel", function()
+    local args = {
+        [1] = "SpinToWin"
+    }
+game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+end)
+
 MainSection:NewToggle("Rainbow Tittle", "Equips Any Owned Titles (IN A MILISECOND)", function(rainbowTittle)
     if rainbowTittle then
         getgenv().rainbowTittle = true
@@ -334,6 +341,10 @@ end)
 
 LocalPlayerSection:NewSlider("Field Of View {FOV}", "", 120, 0, function(fovValue)
     game.Workspace.CurrentCamera.FieldOfView = fovValue
+end)
+
+LocalPlayerSection:NewSlider("Gravity", "", 184, 1, function(gravityValue)
+    Workspace.Gravity = gravityValue
 end)
 
 local Credits = Window:NewTab("Credits")
