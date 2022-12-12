@@ -106,6 +106,202 @@ MainSection:NewButton("Boost FPS", "Destroy's Some Useless Stuff In Workspace", 
 		game:GetService("Workspace").Model.MeshPart:Destroy()
 end)
 
+MainSection:NewToggle("Rainbow Tittle", "Equips Any Owned Titles (IN A MILISECOND)", function(rainbowTittle)
+    if rainbowTittle then
+        getgenv().rainbowTittle = true
+        while getgenv().rainbowTittle ~= false do
+local args = {
+    [1] = "EquipTitle",
+    [2] = "Bubbler"
+}
+game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+wait(0.000000001)
+local args = {
+    [1] = "EquipTitle",
+    [2] = "Novice"
+}
+game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+wait(0.000000001)
+local args = {
+    [1] = "EquipTitle",
+    [2] = "Intermediate"
+}
+game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+wait(0.000000001)
+local args = {
+    [1] = "EquipTitle",
+    [2] = "Expert"
+}
+game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+wait(0.000000001)
+
+local args = {
+    [1] = "EquipTitle",
+    [2] = "Extreme"
+}
+game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+wait(0.000000001)
+local args = {
+    [1] = "EquipTitle",
+    [2] = "Unreal Bubbler"
+}
+game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+wait(0.000000001)
+local args = {
+    [1] = "EquipTitle",
+    [2] = "Godly Bubbler"
+}
+game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+wait(0.000000001)
+local args = {
+    [1] = "EquipTitle",
+    [2] = "Unreal Bubbler"
+}
+game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+wait(0.000000001)
+local args = {
+    [1] = "EquipTitle",
+    [2] = "Egg Master"
+}
+game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+wait(0.000000001)
+local args = {
+    [1] = "EquipTitle",
+    [2] = "Godly Hatcher"
+}
+game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+wait(0.000000001)
+local args = {
+    [1] = "EquipTitle",
+    [2] = "Eggcellent"
+}
+game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+wait(0.000000001)
+local args = {
+    [1] = "EquipTitle",
+    [2] = "No Life"
+}
+game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+wait(0.000000001)
+local args = {
+    [1] = "EquipTitle",
+    [2] = "VIP"
+}
+game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+wait(0.000000001)
+local args = {
+    [1] = "EquipTitle",
+    [2] = "💰 Money Bags 💰"
+}
+game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+wait(0.000000001)
+local args = {
+    [1] = "EquipTitle",
+    [2] = "Subscribed"
+}
+game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+wait(0.000000001)
+local args = {
+    [1] = "EquipTitle",
+    [2] = "Season 8 Elite"
+}
+game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+wait(0.000000001)
+local args = {
+    [1] = "EquipTitle",
+    [2] = "Season 8 Champion"
+}
+game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+wait(0.000000001)
+local args = {
+    [1] = "EquipTitle",
+    [2] = "Easter Elite"
+}
+game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+wait(0.000000001)
+local args = {
+    [1] = "EquipTitle",
+    [2] = "Easter Chamption"
+}
+game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+wait(0.000000001)
+local args = {
+    [1] = "EquipTitle",
+    [2] = "Season 9 Elite"
+}
+game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+wait(0.000000001)
+local args = {
+    [1] = "EquipTitle",
+    [2] = "Season 9 Chamption"
+}
+game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+wait(0.000000001)
+local args = {
+    [1] = "EquipTitle",
+    [2] = "Spring Grinder"
+}
+game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+wait(0.000000001)
+local args = {
+    [1] = "EquipTitle",
+    [2] = "Top 100 (S. 10)"
+}
+game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+wait(0.000000001)
+local args = {
+    [1] = "EquipTitle",
+    [2] = "Season 12 Elite"
+}
+game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+wait(0.000000001)
+local args = {
+    [1] = "EquipTitle",
+    [2] = "Season 12 Champion"
+}
+game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+wait(0.000000001)
+local args = {
+    [1] = "EquipTitle",
+    [2] = "Season 13 Elite"
+}
+game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+wait(0.000000001)
+local args = {
+    [1] = "EquipTitle",
+    [2] = "Season 13 Chamption"
+}
+game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+wait(0.000000001)
+local args = {
+    [1] = "EquipTitle",
+    [2] = "Top 100 (S. 14)"
+}
+game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+wait(0.000000001)
+local args = {
+    [1] = "EquipTitle",
+    [2] = "Season 15 Elite"
+}
+game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+wait(0.000000001)
+local args = {
+    [1] = "EquipTitle",
+    [2] = "Season 15 Champion"
+}
+game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+wait(0.000000001)
+local args = {
+    [1] = "EquipTitle",
+    [2] = "Top 100 (S. 16)"
+}
+game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+wait()
+end
+    else
+        getgenv().rainbowTittle = false
+    end
+end)
 
 -- + Hatch Egg Thing, I will Add More Eggs For Different Worlds, In The Mean-Time This Option Is Use-less.
 MainSection:NewDropdown("Hatch Egg", "Hatches Selected Egg, Must Be Near It.", {"Common Egg", "Spotted Egg", "Ice Shard Egg", "Spikey Egg", "Candycane Egg", "Frosted Egg", "Jelly Egg", "Slushy Egg", "Gummy Egg", "Ice Cream Egg", "Dominus Egg"}, function(eggType)
