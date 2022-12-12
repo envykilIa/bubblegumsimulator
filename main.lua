@@ -2,7 +2,7 @@
 BUBBLE GUM SIMULATOR GUI
 Made by : fortunatesouls#8803
 --]]
-
+local executed = "Working"
 local eggType = "eggType"
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
@@ -85,3 +85,5 @@ local UISettingsSection = UISettings:NewSection("UI Settings")
 UISettingsSection:NewKeybind("GUI Toggle", "", Enum.KeyCode.V, function()
 	Library:ToggleUI()
 end)
+
+print(working)
