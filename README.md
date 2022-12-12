@@ -8,3 +8,6 @@ Overall Improved Features:
 Using ~= Insted Of while getgenv().autoSell, autoBlow == true do.
 Added FPS Booster - Also Lowers CPU Usage By 4% (FPS Unlocker Needed, Since It'll Stay Capped At 60).
 Added Rainbow Title - Basically Just Spams All Titles Remotes Making The Colors Change Really Fast. [ OBVIOUSLY YOU NEED MORE THEN 6 TITTLES TO MAKE IT RAINBOW ].
+
+
+GAME: https://www.roblox.com/games/2512643572/MEGA-LUCK-Bubble-Gum-Simulator
