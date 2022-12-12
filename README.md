@@ -1,4 +1,5 @@
 This Script was made as a TEST, DO NOT EXPECT MUCH.
+Current Version: [ V1.6 ].
 
 Updated 12/11/22 Added:
 All Candy World Starter Egg's (Ice Cream Egg - Jelly Egg).
