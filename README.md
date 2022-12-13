@@ -4,7 +4,7 @@ Current Version: [ V1.07 ].
 
 
 Updated 12/13/22 Added:
-Auto Collect Chest (Just For Floating Island, JUST FOR NOW)
+Auto Collect Chest (Just For Floating Island, The Skylands JUST FOR NOW)
 Added Misc Section [ Epic Stuff Going There Soon.. ;) ].
 
 Updated 12/13/22 Removed:
