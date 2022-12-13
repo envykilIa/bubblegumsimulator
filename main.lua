@@ -311,6 +311,15 @@ end
     end
 end)
 
+MainSection:NewTextBox("Type Egg To Hatch", "This Is Case Sensitive, Check Link Below For Egg Names.", function(eggType)
+	local args = {
+        [1] = "PurchaseEgg",
+        [2] = eggType
+    }
+    game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+    print(eggType)
+end)
+
 -- + Hatch Egg Thing, I will Add More Eggs For Different Worlds, In The Mean-Time This Option Is Use-less.
 MainSection:NewDropdown("Hatch Egg", "Hatches Selected Egg, Must Be Near It.", {"Common Egg", "Spotted Egg", "Ice Shard Egg", "Spikey Egg", "Candycane Egg", "Frosted Egg", "Jelly Egg", "Slushy Egg", "Gummy Egg", "Ice Cream Egg", "Dominus Egg"}, function(eggType)
     local args = {
@@ -320,8 +329,15 @@ MainSection:NewDropdown("Hatch Egg", "Hatches Selected Egg, Must Be Near It.", {
 game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
 end)
 
+
 -- List OF Egg Names, You Can Add These, Just Add "", Or At The End Make Sure It Ends As ""} Insted Of "",}.
 --[[
+EGG - Common Egg
+EGG - Spotted Egg
+EGG - Ice Shard Egg
+EGG - Spikey Egg
+EGG - Candycane Egg (CHRISTMAS 2022)
+EGG - Frosted Egg (CHRISTMAS 2022)
 EGG - Jelly Egg (Candy World)
 EGG - Slushy Egg (Candy World)
 EGG - Gummy Egg (Candy World)
