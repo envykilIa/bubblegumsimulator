@@ -5,7 +5,7 @@ Made by : fortunatesouls#8803
 --]]
 game:GetService('StarterGui'):SetCore("SendNotification", {
 	Title = 'BGS GUI';
-	Text = 'Current Version: V1.7';
+	Text = 'Current Version: V1.07';
 	Icon = "rbxassetid://6466161376";
 	Duration = 3.4028235e+38;
 	Button1 = 'Ok';
