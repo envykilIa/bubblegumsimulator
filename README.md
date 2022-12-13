@@ -1,5 +1,5 @@
 This Script was made as a TEST, DO NOT EXPECT MUCH.
-Current Version: [ V1.7 ].
+Current Version: [ V1.07 ].
 3 UPDATES = NEW VERSION
 
 
