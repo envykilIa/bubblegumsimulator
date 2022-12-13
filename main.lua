@@ -140,7 +140,12 @@ MainSection:NewToggle("Auto Collect Chests", "Auto Collects Chest (IN OWNED WORL
                 [2] = "The Floating Island"
             }
             game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
-            wait(20)
+            wait(10)
+            local args = {
+                [1] = "CollectChestReward",
+                [2] = "The Skylands"
+            }
+            game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
         end
     else
         getgenv().autoCollectChest = false
