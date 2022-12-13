@@ -71,6 +71,23 @@ MainSection:NewToggle("Auto Sell [ Candy World ]", "Auto Sells Bubbles, Must Be 
     end
 end)
 
+MainSection:NewToggle("Auto Sell [ Beach World ]", "Auto Sells Bubbles, Must Be Near Sell Area In Candy World", function(autoSell)
+    if autoSell then
+        getgenv().autoSell = true
+        while getgenv().autoSell ~= false do
+            local args = {
+                [1] = "SellBubble",
+                [2] = "BeachSell"
+            }
+            game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+            wait()
+        end
+        
+        else
+            getgenv().autoSell = false
+    end
+end)
+
 MainSection:NewButton("Boost FPS", "Destroy's Some Useless Stuff In Workspace", function()
 		game:GetService("Workspace").Platforms:Destroy()
 		game:GetService("Workspace").PickupSpawns:Destroy()
@@ -321,7 +338,7 @@ MainSection:NewTextBox("Type Egg To Hatch", "This Is Case Sensitive, Check Link 
 end)
 
 -- + Hatch Egg Thing, I will Add More Eggs For Different Worlds, In The Mean-Time This Option Is Use-less.
-MainSection:NewDropdown("Hatch Egg", "Hatches Selected Egg, Must Be Near It.", {"Common Egg", "Spotted Egg", "Ice Shard Egg", "Spikey Egg", "Candycane Egg", "Frosted Egg", "Jelly Egg", "Slushy Egg", "Gummy Egg", "Ice Cream Egg", "Dominus Egg", "Wind Up Egg", "Block Egg", "Toy Egg"}, function(eggType)
+MainSection:NewDropdown("Hatch Egg", "Hatches Selected Egg, Must Be Near It.", {"Common Egg", "Spotted Egg", "Ice Shard Egg", "Spikey Egg", "Candycane Egg", "Frosted Egg", "Jelly Egg", "Slushy Egg", "Gummy Egg", "Ice Cream Egg", "Dominus Egg", "Wind Up Egg", "Block Egg", "Toy Egg", "Coconut Egg", "Sand Egg", "Beach Egg", "Ballon Egg", "Water Egg", "Crab Egg"}, function(eggType)
     local args = {
     [1] = "PurchaseEgg",
     [2] = eggType
