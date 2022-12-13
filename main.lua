@@ -1,11 +1,11 @@
 --[[
 BUBBLE GUM SIMULATOR GUI
-UPDATED 12/12/22
+UPDATED 12/13/22
 Made by : fortunatesouls#8803
 --]]
 game:GetService('StarterGui'):SetCore("SendNotification", {
 	Title = 'BGS GUI';
-	Text = 'Current Version: V1.6';
+	Text = 'Current Version: V1.7';
 	Icon = "rbxassetid://6466161376";
 	Duration = 3.4028235e+38;
 	Button1 = 'Ok';
@@ -131,202 +131,22 @@ MainSection:NewButton("Spin To Win", "Spins Prize Wheel", function()
 game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
 end)
 
-MainSection:NewToggle("Rainbow Tittle", "Equips Any Owned Titles (IN A MILISECOND)", function(rainbowTittle)
-    if rainbowTittle then
-        getgenv().rainbowTittle = true
-        while getgenv().rainbowTittle ~= false do
-local args = {
-    [1] = "EquipTitle",
-    [2] = "Bubbler"
-}
-game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
-wait(0.000000001)
-local args = {
-    [1] = "EquipTitle",
-    [2] = "Novice"
-}
-game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
-wait(0.000000001)
-local args = {
-    [1] = "EquipTitle",
-    [2] = "Intermediate"
-}
-game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
-wait(0.000000001)
-local args = {
-    [1] = "EquipTitle",
-    [2] = "Expert"
-}
-game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
-wait(0.000000001)
-
-local args = {
-    [1] = "EquipTitle",
-    [2] = "Extreme"
-}
-game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
-wait(0.000000001)
-local args = {
-    [1] = "EquipTitle",
-    [2] = "Unreal Bubbler"
-}
-game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
-wait(0.000000001)
-local args = {
-    [1] = "EquipTitle",
-    [2] = "Godly Bubbler"
-}
-game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
-wait(0.000000001)
-local args = {
-    [1] = "EquipTitle",
-    [2] = "Unreal Bubbler"
-}
-game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
-wait(0.000000001)
-local args = {
-    [1] = "EquipTitle",
-    [2] = "Egg Master"
-}
-game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
-wait(0.000000001)
-local args = {
-    [1] = "EquipTitle",
-    [2] = "Godly Hatcher"
-}
-game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
-wait(0.000000001)
-local args = {
-    [1] = "EquipTitle",
-    [2] = "Eggcellent"
-}
-game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
-wait(0.000000001)
-local args = {
-    [1] = "EquipTitle",
-    [2] = "No Life"
-}
-game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
-wait(0.000000001)
-local args = {
-    [1] = "EquipTitle",
-    [2] = "VIP"
-}
-game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
-wait(0.000000001)
-local args = {
-    [1] = "EquipTitle",
-    [2] = "💰 Money Bags 💰"
-}
-game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
-wait(0.000000001)
-local args = {
-    [1] = "EquipTitle",
-    [2] = "Subscribed"
-}
-game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
-wait(0.000000001)
-local args = {
-    [1] = "EquipTitle",
-    [2] = "Season 8 Elite"
-}
-game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
-wait(0.000000001)
-local args = {
-    [1] = "EquipTitle",
-    [2] = "Season 8 Champion"
-}
-game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
-wait(0.000000001)
-local args = {
-    [1] = "EquipTitle",
-    [2] = "Easter Elite"
-}
-game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
-wait(0.000000001)
-local args = {
-    [1] = "EquipTitle",
-    [2] = "Easter Chamption"
-}
-game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
-wait(0.000000001)
-local args = {
-    [1] = "EquipTitle",
-    [2] = "Season 9 Elite"
-}
-game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
-wait(0.000000001)
-local args = {
-    [1] = "EquipTitle",
-    [2] = "Season 9 Chamption"
-}
-game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
-wait(0.000000001)
-local args = {
-    [1] = "EquipTitle",
-    [2] = "Spring Grinder"
-}
-game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
-wait(0.000000001)
-local args = {
-    [1] = "EquipTitle",
-    [2] = "Top 100 (S. 10)"
-}
-game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
-wait(0.000000001)
-local args = {
-    [1] = "EquipTitle",
-    [2] = "Season 12 Elite"
-}
-game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
-wait(0.000000001)
-local args = {
-    [1] = "EquipTitle",
-    [2] = "Season 12 Champion"
-}
-game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
-wait(0.000000001)
-local args = {
-    [1] = "EquipTitle",
-    [2] = "Season 13 Elite"
-}
-game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
-wait(0.000000001)
-local args = {
-    [1] = "EquipTitle",
-    [2] = "Season 13 Chamption"
-}
-game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
-wait(0.000000001)
-local args = {
-    [1] = "EquipTitle",
-    [2] = "Top 100 (S. 14)"
-}
-game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
-wait(0.000000001)
-local args = {
-    [1] = "EquipTitle",
-    [2] = "Season 15 Elite"
-}
-game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
-wait(0.000000001)
-local args = {
-    [1] = "EquipTitle",
-    [2] = "Season 15 Champion"
-}
-game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
-wait(0.000000001)
-local args = {
-    [1] = "EquipTitle",
-    [2] = "Top 100 (S. 16)"
-}
-game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
-wait()
-end
+MainSection:NewToggle("Auto Collect Chests", "Auto Collects Chest (IN OWNED WORLDS)", function(chestFunction)
+    if chestFunction then
+        getgenv().autoCollectChest = true
+        while getgenv().autoCollectChest ~= false do
+            local args = {
+                [1] = "CollectChestReward",
+                [2] = "The Floating Island"
+            }
+            game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
+            wait(20)
+        end
     else
-        getgenv().rainbowTittle = false
+        getgenv().autoCollectChest = false
     end
 end)
+
 
 MainSection:NewTextBox("Type Egg To Hatch", "This Is Case Sensitive, Check Link Below For Egg Names.", function(eggType)
 	local args = {
@@ -346,12 +166,19 @@ MainSection:NewDropdown("Hatch Egg", "Hatches Selected Egg, Must Be Near It.", {
 game:GetService("ReplicatedStorage").NetworkRemoteEvent:FireServer(unpack(args))
 end)
 
-
 -- List OF Egg Names, You Can Add These, Just Add "", Or At The End Make Sure It Ends As ""} Insted Of "",}.
 --[[
 
 --]]
 
+-- // MISC \\ --
+local Misc = Window:NewTab("Misc")
+local MiscSection = Misc:NewSection("Misc [ COMING SOON ]")
+
+
+
+
+-- // LOCAL-PLAYER \\ --
 local LocalPlayer = Window:NewTab("Local-Player")
 local LocalPlayerSection = LocalPlayer:NewSection("Local-Player")
 
