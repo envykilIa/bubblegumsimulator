@@ -321,7 +321,7 @@ MainSection:NewTextBox("Type Egg To Hatch", "This Is Case Sensitive, Check Link 
 end)
 
 -- + Hatch Egg Thing, I will Add More Eggs For Different Worlds, In The Mean-Time This Option Is Use-less.
-MainSection:NewDropdown("Hatch Egg", "Hatches Selected Egg, Must Be Near It.", {"Common Egg", "Spotted Egg", "Ice Shard Egg", "Spikey Egg", "Candycane Egg", "Frosted Egg", "Jelly Egg", "Slushy Egg", "Gummy Egg", "Ice Cream Egg", "Dominus Egg"}, function(eggType)
+MainSection:NewDropdown("Hatch Egg", "Hatches Selected Egg, Must Be Near It.", {"Common Egg", "Spotted Egg", "Ice Shard Egg", "Spikey Egg", "Candycane Egg", "Frosted Egg", "Jelly Egg", "Slushy Egg", "Gummy Egg", "Ice Cream Egg", "Dominus Egg", "Wind Up Egg", "Block Egg", "Toy Egg"}, function(eggType)
     local args = {
     [1] = "PurchaseEgg",
     [2] = eggType
@@ -332,17 +332,7 @@ end)
 
 -- List OF Egg Names, You Can Add These, Just Add "", Or At The End Make Sure It Ends As ""} Insted Of "",}.
 --[[
-EGG - Common Egg
-EGG - Spotted Egg
-EGG - Ice Shard Egg
-EGG - Spikey Egg
-EGG - Candycane Egg (CHRISTMAS 2022)
-EGG - Frosted Egg (CHRISTMAS 2022)
-EGG - Jelly Egg (Candy World)
-EGG - Slushy Egg (Candy World)
-EGG - Gummy Egg (Candy World)
-EGG - Icecream Egg (Candy World)
-EGG - Dominus Egg (Candy World)
+
 --]]
 
 local LocalPlayer = Window:NewTab("Local-Player")
