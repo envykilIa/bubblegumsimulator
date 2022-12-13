@@ -1,5 +1,7 @@
 This Script was made as a TEST, DO NOT EXPECT MUCH.
-Current Version: [ V1.6 ].
+Current Version: [ V1.7 ].
+3 UPDATES = NEW VERSION
+
 
 Updated 12/13/22 Added:
 Auto Collect Chest (Just For Floating Island, JUST FOR NOW)
