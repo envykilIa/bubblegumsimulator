@@ -8,9 +8,14 @@
 Made By : fortunatesouls#8803 [All Credit Must Return To Me, If You Copy From This.]
 Updated : 12/13/22
 --]]
+
+local Player = game.Players.LocalPlayer
+
+if game.PlaceId == (2512643572) then
+    
 game:GetService('StarterGui'):SetCore("SendNotification", {
 	Title = 'BGS GUI';
-	Text = 'Current Version: V1.07';
+	Text = "Welcome : "..Player.Name.." ",
 	Icon = "rbxassetid://6466161376";
 	Duration = 3.4028235e+38;
 	Button1 = 'Ok';
@@ -22,7 +27,7 @@ local executed = "Working"
 local eggType = "eggType"
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Bubble Gum Simualtor", "DarkTheme")
+local Window = Library.CreateLib("Bubble Gum Simualtor", "BloodTheme")
 
 local Main = Window:NewTab("Main")
 local MainSection = Main:NewSection("Main")
@@ -225,3 +230,4 @@ UISettingsSection:NewKeybind("GUI Toggle", "", Enum.KeyCode.V, function()
 end)
 
 print(executed)
+end
