@@ -1,4 +1,11 @@
 --[[
+PLEASE READ: https://github.com/envykilIa/bubblegumsimulator/blob/main/egg_list.lua
+TO GET MORE EGG NAMES, YOU CAN ADD ANY OF THEM TO THE LIST, MAKE SURE THEY START WITH
+"Mossy Egg", IF ITS AT THE END JUST DO "Mossy Egg"} SINCE ITS THE END OF A TABLE
+ALL EGG NAMES ARE CASE SENSITIVE.
+--]]
+
+--[[
   ____            _       _       _             ____                         ____    _                       _           _                  
  | __ )   _   _  | |__   | |__   | |   ___     / ___|  _   _   _ __ ___     / ___|  (_)  _ __ ___    _   _  | |   __ _  | |_    ___    _ __ 
  |  _ \  | | | | | '_ \  | '_ \  | |  / _ \   | |  _  | | | | | '_ ` _ \    \___ \  | | | '_ ` _ \  | | | | | |  / _` | | __|  / _ \  | '__|
